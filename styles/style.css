@@ -10,6 +10,7 @@ header{
     margin-top: 30px;
 }
 
+/* nav style */
 nav h4{
     color: rgb(58, 58, 58);
     font-size: 1.2rem;
@@ -35,4 +36,52 @@ nav a{
     justify-content: space-around;
     align-items: center;
     gap: 34px;
+}
+
+
+/* banner section */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0px auto;
+    margin-top: 50px;
+    gap: 85px;
+}
+
+.banner-description{
+    max-width: 650px;
+}
+.banner-description h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(58, 58, 58);
+    margin-bottom: 16px;
+}
+
+.banner-description p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    margin-bottom: 16px;
+}
+
+.btn-primary{
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+    padding: 10px 24px 10px 24px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.banner-img{
+    max-width: 475px; 
+    padding: 30px 33px 31px 2px;  
+     
+}
+.banner-img img{
+    width: 100%;
 }
