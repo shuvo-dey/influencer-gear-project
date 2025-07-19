@@ -48,6 +48,10 @@ nav a{
     margin: 0px auto;
     margin-top: 50px;
     gap: 85px;
+    background: url("../images/Circle\ design.svg"); 
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 450px;
 }
 
 .banner-description{
@@ -78,10 +82,21 @@ nav a{
 }
 
 .banner-img{
-    max-width: 475px; 
-    padding: 30px 33px 31px 2px;  
-     
+    max-width: 475px;  
+        
 }
 .banner-img img{
+    padding: 30px 33px 31px 2px;
     width: 100%;
+}
+
+/* sponsor */
+
+.sponsor{
+    max-width: 1110px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 70px;
 }
