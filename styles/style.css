@@ -229,3 +229,33 @@ nav a {
   color: rgb(255, 255, 255);
   border: none;
 }
+
+/* footer section */
+footer {
+  text-align: center;
+  background-color: rgb(8, 10, 38);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 50px 0px;
+}
+
+.footer h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.footer p {
+  color: rgb(217, 219, 225);
+  font-family: Manrope;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.footer span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
