@@ -1,102 +1,179 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    font-family: "Poppins", sans-serif;
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
 }
 
-header{
-    max-width: 1140px;
-    margin: 0px auto;
-    margin-top: 30px;
+header {
+  max-width: 1140px;
+  margin: 0px auto;
+  margin-top: 30px;
 }
 
 /* nav style */
-nav h4{
-    color: rgb(58, 58, 58);
-    font-size: 1.2rem;
-    font-weight: 700;
+nav h4 {
+  color: rgb(58, 58, 58);
+  font-size: 1.2rem;
+  font-weight: 700;
 }
-.nav-section ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 490px;
+.nav-section ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 490px;
 }
-.nav-section ul li{
-    list-style: none;
+.nav-section ul li {
+  list-style: none;
 }
-nav a{
-    text-decoration: none;
-    color: rgb(58, 58, 58);
-    font-weight: 600;
-    font-size: 1rem;
+nav a {
+  text-decoration: none;
+  color: rgb(58, 58, 58);
+  font-weight: 600;
+  font-size: 1rem;
 }
-.link{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 34px;
+.link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 34px;
 }
-
 
 /* banner section */
-.banner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1140px;
-    margin: 0px auto;
-    margin-top: 50px;
-    gap: 85px;
-    background: url("../images/Circle\ design.svg"); 
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: 450px;
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0px auto;
+  margin-top: 50px;
+  gap: 85px;
+  background: url("../images/Circle\ design.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 450px;
 }
 
-.banner-description{
-    max-width: 650px;
+.banner-description {
+  max-width: 650px;
 }
-.banner-description h2{
-    font-size: 3rem;
-    font-weight: 700;
-    color: rgb(58, 58, 58);
-    margin-bottom: 16px;
-}
-
-.banner-description p{
-    font-size: 1rem;
-    font-weight: 600;
-    color: rgb(58, 58, 58);
-    margin-bottom: 16px;
+.banner-description h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(58, 58, 58);
+  margin-bottom: 16px;
 }
 
-.btn-primary{
-    border-radius: 41px;
-    background: rgb(224, 44, 109);
-    padding: 10px 24px 10px 24px;
-    font-size: 1rem;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    border: none;
+.banner-description p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  margin-bottom: 16px;
 }
 
-.banner-img{
-    max-width: 475px;  
-        
+.btn-primary {
+  border-radius: 41px;
+  background: rgb(224, 44, 109);
+  padding: 10px 24px 10px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  border: none;
 }
-.banner-img img{
-    padding: 30px 33px 31px 2px;
-    width: 100%;
+
+.banner-img {
+  max-width: 475px;
+}
+.banner-img img {
+  padding: 30px 33px 31px 2px;
+  width: 100%;
 }
 
 /* sponsor */
 
-.sponsor{
-    max-width: 1110px;
-    margin: 0px auto;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    margin-bottom: 70px;
+.sponsor {
+  max-width: 1110px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+/* main section style */
+
+.card-section {
+  margin: 0px auto;
+  max-width: 1047px;
+  margin-top: 100px;
+}
+
+.card-all {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card-section-text {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: rgb(58, 58, 58);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  max-width: 329px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+.card img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.card h2 {
+  color: rgb(24, 25, 31);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.card h3 {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 2px 0;
+}
+.card span i {
+  color: rgb(251, 130, 0);
+}
+
+.card div h5 {
+  color: rgb(94, 99, 102);
+  font-family: Roboto;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+
+.card p {
+  color: rgb(120, 120, 133);
+  font-family: Inter;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
