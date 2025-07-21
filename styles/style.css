@@ -177,3 +177,55 @@ nav a {
   margin-top: 2px;
   margin-bottom: 2px;
 }
+
+.card-section-footer {
+  margin: 20px auto;
+  text-align: right;
+  color: rgba(224, 44, 109, 0.87);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* feature section */
+
+.feature {
+  max-width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px auto;
+  gap: 95px;
+}
+.feature-img {
+  max-width: 404px;
+}
+.feature-img img {
+  width: 100%;
+}
+
+.feature-right {
+}
+.feature-right h3 {
+  color: rgb(10, 8, 38);
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.feature-right p {
+  color: rgb(108, 108, 108);
+  font-size: 0.8rem;
+  font-weight: 700;
+  max-width: 500px;
+  margin-bottom: 16px;
+}
+
+.btn-2 {
+  border-radius: 2px;
+  background: rgb(224, 44, 109);
+  padding: 10px 24px 10px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  border: none;
+}
