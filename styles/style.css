@@ -309,15 +309,11 @@ footer {
 
   .card-section {
     padding: 0px;
-    justify-items: center;
+    justify-self: center;
   }
   .card-all {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
-  }
-
-  .card-section-footer {
-    text-align: right;
   }
 
   /* feature section */
