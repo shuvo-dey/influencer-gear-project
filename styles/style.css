@@ -1,7 +1,13 @@
+/* Universal Styles (apply to all screen sizes) */
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Added for better box model handling */
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 button:hover {
@@ -9,58 +15,70 @@ button:hover {
   cursor: pointer;
 }
 
-header {
-  max-width: 1140px;
-  margin: 0px auto;
-  margin-top: 30px;
+header,
+main,
+footer {
+  /* Added padding to prevent content from touching screen edges on smaller devices */
+  padding: 0 20px;
 }
 
-/* nav style */
+header {
+  max-width: 1140px;
+  margin: 30px auto;
+}
+
+/* Nav Styles */
 nav h4 {
   color: rgb(58, 58, 58);
   font-size: 1.2rem;
   font-weight: 700;
 }
+
 .nav-section ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 490px;
+  gap: 30px; /* Reduced initial gap for better flexibility */
+  flex-wrap: wrap; /* Allow nav items to wrap if needed */
 }
+
 .nav-section ul li {
   list-style: none;
 }
+
 nav a {
   text-decoration: none;
   color: rgb(58, 58, 58);
   font-weight: 600;
   font-size: 1rem;
 }
+
 .link {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 34px;
+  gap: 25px; /* Reduced initial gap */
 }
 
-/* banner section */
+/* Banner Section */
 .banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1140px;
-  margin: 0px auto;
-  margin-top: 50px;
+  margin: 50px auto;
   gap: 85px;
   background: url("../images/Circle\ design.svg");
-  background-position: bottom right;
+  background-position: center right;
   background-repeat: no-repeat;
-  background-size: 450px;
+  background-size: 35%;
+  padding: 20px 0px;
 }
 
 .banner-description {
   max-width: 650px;
 }
+
 .banner-description h2 {
   font-size: 3rem;
   font-weight: 700;
@@ -78,7 +96,7 @@ nav a {
 .btn-primary {
   border-radius: 41px;
   background: rgb(224, 44, 109);
-  padding: 10px 24px 10px 24px;
+  padding: 10px 24px;
   font-size: 1rem;
   font-weight: 700;
   color: rgb(255, 255, 255);
@@ -87,29 +105,34 @@ nav a {
 
 .banner-img {
   max-width: 475px;
+  /* Ensure image fits within its container */
 }
 .banner-img img {
   padding: 30px 33px 31px 2px;
   width: 100%;
 }
 
-/* sponsor */
-
+/* Sponsor Section */
 .sponsor {
   max-width: 1110px;
-  margin: 0px auto;
+  margin: 30px auto 70px;
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
-  margin-bottom: 70px;
+  flex-wrap: wrap; /* Allow logos to wrap onto new lines */
+  gap: 30px; /* Add some gap between logos */
 }
 
-/* main section style */
+.sponsor img {
+  max-width: 100px; /* Limit individual logo size */
+  height: auto;
+}
 
+/* Main Section Styles */
+
+/* card section */
 .card-section {
-  margin: 0px auto;
   max-width: 1047px;
-  margin-top: 100px;
+  margin: 100px auto 0; /* Adjusted margin for consistency */
 }
 
 .card-all {
@@ -117,6 +140,7 @@ nav a {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+
 .card-section-text {
   text-align: center;
   font-size: 1.9rem;
@@ -128,8 +152,10 @@ nav a {
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 3px;
-  max-width: 329px;
+  max-width: 329px; /* Max width for individual cards */
+  width: 100%; /* Ensure cards take full width in smaller grids */
   border-radius: 5px;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
   background: rgb(255, 255, 255);
@@ -140,6 +166,7 @@ nav a {
 .card img {
   border-radius: 5px;
   width: 100%;
+  height: auto; /* Ensure image scales proportionally */
 }
 
 .card h2 {
@@ -156,6 +183,7 @@ nav a {
   line-height: 150%;
   padding: 2px 0;
 }
+
 .card span i {
   color: rgb(251, 130, 0);
 }
@@ -170,7 +198,7 @@ nav a {
 .rating {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start; /* Changed to flex-start for consistency */
   gap: 15px;
 }
 
@@ -192,8 +220,7 @@ nav a {
   font-weight: 700;
 }
 
-/* feature section */
-
+/* Feature Section */
 .feature {
   max-width: 1110px;
   display: flex;
@@ -202,14 +229,14 @@ nav a {
   margin: 100px auto;
   gap: 95px;
 }
+
 .feature-img {
   max-width: 404px;
 }
+
 .feature-img img {
   width: 100%;
-}
-
-.feature-right {
+  height: auto;
 }
 .feature-right h3 {
   color: rgb(10, 8, 38);
@@ -217,6 +244,7 @@ nav a {
   font-weight: 700;
   margin-bottom: 16px;
 }
+
 .feature-right p {
   color: rgb(108, 108, 108);
   font-size: 0.8rem;
@@ -228,15 +256,15 @@ nav a {
 .btn-2 {
   border-radius: 2px;
   background: rgb(224, 44, 109);
-  padding: 10px 24px 10px 24px;
+  padding: 10px 24px;
   font-size: 1rem;
   font-weight: 700;
   color: rgb(255, 255, 255);
   border: none;
 }
 
-/* footer section */
-footer {
+/* Footer Section */
+.footer {
   text-align: center;
   background-color: rgb(8, 10, 38);
   color: white;
@@ -245,83 +273,225 @@ footer {
   justify-content: center;
   flex-direction: column;
   gap: 5px;
-  padding: 50px 0px;
+  padding: 50px 20px; /* Added horizontal padding */
 }
 
 .footer h4 {
   font-size: 1.3rem;
   font-weight: 700;
 }
+
 .footer p {
   color: rgb(217, 219, 225);
   font-family: Manrope;
   font-size: 0.8rem;
   font-weight: 700;
 }
+
 .footer span {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 15px; /* Increased gap for social icons */
+  margin-top: 10px; /* Add some space above icons */
 }
 
-/* responsive section */
+.footer i {
+  font-size: 1.5rem; /* Make icons slightly larger */
+}
 
-/* small device section */
+/*
+---
+Responsive Section
+---
+*/
 
-@media screen and (max-width: 576px) {
-  * {
-    margin-left: 2px;
-    padding: 2px;
-  }
-
-  /* header section  */
+/* Medium Devices (Tablets, 768px and up, but less than typical desktop) */
+@media screen and (max-width: 992px) {
+  /* Header & Navigation */
   .nav-section ul {
-    flex-direction: column;
-    gap: 10px;
-    margin: 0 auto;
-  }
-  .link {
-    gap: 5px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  /* banner section  */
-  .banner {
-    flex-direction: column;
-    gap: 40px;
-    background-position: bottom;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  /* sponsor section  */
-  .sponsor {
-    padding-top: 30px;
-    margin: 0px auto;
-    flex-wrap: wrap;
-    flex: 1;
-    gap: 25px;
+    flex-direction: column; /* Stack nav items */
+    gap: 15px;
+    padding: 10px 0; /* Add some vertical padding */
   }
 
-  /* main section style */
+  .link {
+    flex-wrap: wrap; /* Allow links to wrap */
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* Banner Section */
+  .banner {
+    flex-direction: column; /* Stack banner content */
+    gap: 40px;
+    background-position: bottom center;
+    text-align: center;
+    margin-top: 30px;
+    background-size: 55%; /* Adjust background circle size */
+    padding: 0px;
+  }
+
+  .banner-description {
+    max-width: 90%; /* Allow description to take more width */
+  }
+
+  .banner-description h2 {
+    font-size: 2.5rem; /* Smaller font size for h2 */
+  }
+
+  .banner-img img {
+    max-width: 80%; /* Limit image width */
+  }
+
+  /* Sponsor Section */
+  .sponsor {
+    justify-content: center; /* Center logos */
+    gap: 20px; /* Adjust gap */
+    padding: 20px 0; /* Add vertical padding */
+  }
+
+  /* Card Section */
 
   .card-section {
-    padding: 0px;
-    justify-self: center;
+    margin-top: 50px; /* Adjust top margin */
   }
+
   .card-all {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    justify-items: center; /* Center cards in the grid */
+  }
+
+  /* Feature Section */
+  .feature {
+    flex-direction: column; /* Stack feature content */
+    text-align: center;
+    gap: 40px;
+    margin: 50px auto; /* Adjust margin */
+  }
+
+  .feature-img {
+    max-width: 70%; /* Adjust image size */
+  }
+
+  .feature-right {
+    max-width: 90%; /* Allow text to take more width */
+  }
+
+  .feature-right h3 {
+    font-size: 1.8rem; /* Smaller font size for h3 */
+  }
+}
+
+/* Small Devices (Phones, up to 576px) */
+@media screen and (max-width: 576px) {
+  /* Global adjustments for very small screens */
+  header,
+  main,
+  footer {
+    padding: 0 15px; /* Reduce horizontal padding further */
+  }
+
+  h2,
+  h3 {
+    font-size: 1.8rem !important; /* Make sure headings are not too large */
+  }
+
+  p {
+    font-size: 0.9rem !important; /* Adjust paragraph font size */
+  }
+
+  .btn-primary,
+  .btn-2 {
+    padding: 8px 18px; /* Slightly smaller buttons */
+    font-size: 0.9rem;
+  }
+
+  /* Header & Navigation */
+  .nav-section ul {
     gap: 10px;
   }
 
-  /* feature section */
+  .link {
+    gap: 10px;
+  }
 
+  /* Banner Section */
+  .banner {
+    gap: 20px;
+    margin-top: 20px;
+    background-size: 60%; /* Further adjust background circle size */
+    background-position: bottom center;
+  }
+
+  .banner-img {
+    max-width: 70%; /* Make image larger on mobile */
+  }
+
+  .banner-description h2 {
+    font-size: 2rem; /* Even smaller font size for h2 on tiny screens */
+  }
+
+  /* Sponsor Section */
+  .sponsor {
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  /* Card Section */
+  .card-all {
+    grid-template-columns: repeat(1, 1fr); /* Single column for phones */
+    gap: 15px;
+  }
+
+  .card-section-text {
+    font-size: 1.5rem; /* Adjust popular collection heading */
+    margin-bottom: 20px;
+  }
+
+  .card-section-footer {
+    text-align: center; /* Center "See more" link */
+    padding-right: 0;
+  }
+
+  /* Feature Section */
   .feature {
-    flex-direction: column;
+    gap: 20px;
     margin: 30px auto;
-    gap: 30px;
-    text-align: center;
+  }
+
+  .feature-img {
+    max-width: 90%; /* Adjust feature image size */
+  }
+
+  .feature-right h3 {
+    font-size: 1.5rem; /* Adjust feature heading */
+  }
+
+  .feature-right p {
+    font-size: 0.8rem; /* Adjust feature paragraph */
+  }
+
+  /* Footer */
+  .footer {
+    padding: 30px 15px; /* Adjust footer padding */
+  }
+
+  .footer h4 {
+    font-size: 1.1rem;
+  }
+
+  .footer p {
+    font-size: 0.7rem;
+  }
+
+  .footer span {
+    gap: 10px;
+  }
+
+  .footer i {
+    font-size: 1.2rem;
   }
 }
